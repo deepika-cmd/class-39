@@ -53,7 +53,7 @@ class Game {
       var index = 0;
 
       //x and y position of the cars
-      var x = 0;
+      var x = 175;
       var y;
 
       for(var plr in allPlayers){
@@ -83,7 +83,15 @@ class Game {
       player.distance +=10
       player.update();
     }
-
+if(player.distance>3860){
+  gameState = 2
+   
+   }
     drawSprites();
+ 
+  
+  }
+  end(){
+    console.log("game ended")
   }
 }
